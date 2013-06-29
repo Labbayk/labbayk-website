@@ -1,0 +1,7 @@
+body{font:12px Tahoma, Geneva, sans-serif; color:#444; text-align:right}a:focus{outline:1px dotted}hr{border:0 #ccc solid;border-top-width:1px;clear:both;height:0}h1{font-size:25px}h2{font-size:23px}h3{font-size:21px}h4{font-size:19px}h5{font-size:17px}h6{font-size:14px}dl,hr,h1,h2,h3,h4,h5,ol,ul,pre,table,address,fieldset{margin-bottom:20px}
+p{text-align:right; line-height:18px; font:14px Tahoma, Geneva, sans-serif; color:#444; padding:0 10px; display:block; clear:both;}
+a {color:#006679; text-decoration:none; font-style:italic; direction:rtl; text-align:right}a:hover {text-decoration:underline;}
+table.tablecolors tr td h6 span {margin:0 0 0 5px; direction:rtl; float:right}  table.tablecolors tr td h6 {background:url(../../images/list-sep.png) no-repeat bottom left; padding:0 0 5px 0;}
+ table.tablecolors p{margin:5px 0 0 0;}
+ 
+h1,h2,h3,h4,h5,h6{ text-align:right; direction:rtl} 

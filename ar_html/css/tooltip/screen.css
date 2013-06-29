@@ -1,0 +1,42 @@
+#tooltip {
+	position: absolute;
+	z-index: 3000;
+	border: 1px solid #111;
+	background-color: #eee;
+	
+	
+}
+#tooltip h3, #tooltip div { margin: 0; }
+#tooltip.pretty {
+	margin:20px 0 0;
+	font-family: Arial;
+	border: none;
+	width: 144px;
+	height: 51px;
+	background: url('../../images/shadow2.png');
+}
+#tooltip.pretty h3 {
+	margin-top:5px;
+	margin-left:10px;
+	font-size: 12px;
+	width: 144px;
+	text-align: left;
+	color:#f7f7f7;
+}
+#tooltip.pretty div { width: 220px; text-align: left; }
+
+#tooltip.fancy {
+	background: url('../../images/shadow2.png') no-repeat;
+	margin-top:-30px;
+	height: 43px;
+}
+#tooltip.fancy.viewport-right {
+	background: url('../../images/shadow2.png');
+}
+
+#extended { margin: 2em 0; }
+#extended label { text-decoration: underline; }
+#yahoo { width: 7em; }
+#right, #right2 { text-align: right; }
+#tooltip.right { width: 250px; }
+#fancy2 { float: right; }

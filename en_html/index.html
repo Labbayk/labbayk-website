@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+<title>:: Labbayk Home ::</title>
+
+<!--Styles-->
+<link rel="stylesheet" href="css/reset.css" />
+<link rel="stylesheet" href="css/text.css" />
+<link rel="stylesheet" href="css/960.css" />
+<link rel="stylesheet" href="css/uncompressed/demo.css" />
+<link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
+<link rel="stylesheet" href="css/tooltip/screen.css" />
+<link rel="stylesheet" href="css/sortable/demo_table.css" />
+
+<!--Scripts-->
+<script src="scripts/lib/jquery.js" type="text/javascript"></script>
+<script src="scripts/lib/jquery.dimensions.js" type="text/javascript"></script>
+<script src="scripts/jquery.tooltip.js" type="text/javascript"></script>
+<script src="scripts/script.js" type="text/javascript"></script>
+<script type="text/javascript" src="scripts/jquery.url.js"></script>
+<script type="text/javascript" language="javascript" src="scripts/jquery.dataTables.js"></script>
+
+<script type="text/javascript">
+var oTable;
+		
+		$(document).ready(function() {
+			oTable = $('#example').dataTable();
+		} );
+
+$(function() {
+$('#set1 *').tooltip();
+$('#facebook').tooltip({
+	track: true,
+	delay: 0,
+	showURL: false,
+	showBody: " - ",
+	extraClass: "pretty",
+	fixPNG: true,
+	left: -120
+});
+$('#linkedin').tooltip({
+	track: true,
+	delay: 0,
+	showURL: false,
+	showBody: " - ",
+	extraClass: "pretty",
+	fixPNG: true,
+	left: -120
+});
+$('#twitter').tooltip({
+	track: true,
+	delay: 0,
+	showURL: false,
+	showBody: " - ",
+	extraClass: "pretty",
+	fixPNG: true,
+	left: -120
+});
+});
+</script>
+
+</head>
+<body>
+
+<div class="container_16">
+	<div class="grid_16 header">
+    	<div class="nav-menu">
+        	<a href="../ar_HTML/index.html" class="lang">عربي</a>
+        	<ul class="menunav">
+                <li><a href="index.html">Index</a></li>
+                <li><a href="form.html">Form</a></li>
+                <li><a href="searchresults.html">Search Results</a></li>
+                <li><a href="sortable.html">Grid Results</a></li>
+            </ul>
+            
+        </div>
+        
+        <div class="banner">
+        	<a href="#" class="logo-link"></a>
+        </div>
+    </div> <!-- End Header -->
+	
+	<div class="grid_4">
+    	<div class="login-wrap">
+        	<div class="login-top">
+            	<form id="loginform" method="post" action="#">
+                	<p>Name</p>
+                	<p><input type="text" class="uname" onblur="if(this.value!='')this.style.background='none url(images/login-box.jpg) no-repeat scroll 0 100% transparent';" /></p>
+                    <p>Password</p>
+                    <p><input type="password" class="pword" onblur="if(this.value!='')this.style.background='none url(images/login-box.jpg) no-repeat scroll 0 100% transparent';" /></p>
+                    <p><input type="submit" value="Login" class="login-btn" /></p>
+                </form>
+            </div>
+            <span class="login-bottom"></span>
+        </div><!--Eng Login-->
+        
+        <div class="list-wrap">
+        	<div class="list-top">
+       	    <ul>
+                	<li><a href="#">Item 0.1</a></li>
+                    <li><a href="#">Item 0.1</a></li>
+                    <li><a href="#">Item 0.1</a></li>
+                </ul>
+            </div>
+            <span class="list-bottom"></span>
+        </div>
+	</div>
+	<!-- End Side Bars -->
+    
+    
+	<div class="grid_12">
+    	<div class="search-wrap">
+        	<form action="#" id="searchform" method="get">
+            <div class="search-field">
+				<input type="text" value="Site Search..." onblur="if(this.value=='')this.value='Site Search...';" onfocus="if(this.value=='Site Search...')this.value='';" >
+            </div>
+			</form>
+        </div> <!-- End Search -->
+        
+        
+        
+        <div class="right-wrap">
+            <div class="title-wrap">
+                <h5>Title...</h5>
+            </div>
+            
+            <div class="right-wrap-content-top">
+                <div class="right-wrap-content">
+                    <div class="register-form">
+                        <form action="#">
+                            <p><label>Name</label><input type="text" onblur="if(this.value!='')this.style.background='none url(images/text-field.jpg) no-repeat scroll 0 100% transparent';" /><label>*</label></p>
+                            <p><label>Password</label><input type="password" onblur="if(this.value!='')this.style.background='none url(images/text-field.jpg) no-repeat scroll 0 100% transparent';" /><label>*</label></p>
+                            <p class="cond-terms"><input type="checkbox" />I agree to <a href="#">terms of condition</a></p>
+                            <p><input type="submit" value="Submit" class="submit-btn" /></p>
+                        </form>
+                    </div>
+                    <br style="clear:both;font-size:0;line-height:0;height:0;" />  <!--auto height fix--> 
+                </div>
+            </div>	
+        </div><!--End Form-->
+        
+        
+        
+        <div class="right-wrap">
+            <div class="title-wrap">
+                <h5>Search results for "<span class="keyword">Keyword</span>"</h5>
+            </div>
+            
+            <div class="right-wrap-content-top">
+                <div class="right-wrap-content">
+                	<div class="search-results">                	
+                        <table class="tablecolors"> 
+                          <tr> 
+                            <td>
+                            	<h6><span id="">1</span>Result One</h6>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<a href="#">Visit link</a></p>
+                            </td> 
+                          </tr>
+                          <tr> 
+                            <td>
+                            	<h6><span id="">2</span>Result Two</h6>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<a href="#">Visit link</a></p>
+                            </td> 
+                          </tr>
+                          <tr> 
+                            <td>
+                            	<h6><span id="">3</span>Result Three</h6>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<a href="#">Visit link</a></p>
+                            </td> 
+                          </tr>
+                          <tr> 
+                            <td>
+                            	<h6><span id="">4</span>Result Four</h6>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<a href="#">Visit link</a></p>
+                            </td> 
+                          </tr>                                               
+                        </table> 
+                    </div>
+                    <div class="result-pages">
+                    	<ul class="navigation">
+                        	<li><a href="#" class="inactive">Previous</a></li>
+                            <li><a href="table.html">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">Next</a></li>
+                        </ul>
+                    </div>
+                    <br style="clear:both;font-size:0;line-height:0;height:0;" />  <!--auto height fix--> 
+                </div>
+            </div>	
+        </div> <!--End Search Results-->
+        
+        
+        
+        <div class="right-wrap">
+            <div id="demo">
+                <form id="form">
+                    <table cellpadding="0" cellspacing="0" border="0" class="display" id="example">
+                        <thead>
+                            <tr>
+                                <th width="25%">Rendering engine</th>
+                                <th width="60%">Browser</th>
+                                <th width="20%">Platform(s)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Trident 1</td>
+                                <td>
+                                	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<a href="#">Visit link</a></p>
+                                </td>
+                                <td>Win 95+</td>
+                            </tr>
+                            <tr>
+                                <td>Trident 2</td>
+                                <td>
+                                	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<a href="#">Visit link</a></p>
+                                </td>
+                                <td>Win 95+</td>
+                            </tr>
+                            <tr>
+                                <td>Trident 2</td>
+                                <td>
+                                	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<a href="#">Visit link</a></p>
+                                </td>
+                                <td>Win 95+</td>
+                            </tr>
+                            <tr>
+                                <td>Trident 2</td>
+                                <td>
+                                	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<a href="#">Visit link</a></p>
+                                </td>
+                                <td>Win 95+</td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </form>
+             </div>
+             <br style="clear:both;font-size:0;line-height:0;height:0;" />  <!--auto height fix--> 
+         </div> <!--End Sortable-->
+         
+         
+         
+         <div class="right-wrap">
+             <span class="ad-section-top"></span>
+             <div class="ad-section-middle">
+             	<div class="ads"><a href="#"></a></div>
+                <div class="ads"><a href="#"></a></div>
+                <div class="ads"><a href="#"></a></div>
+                <div class="ads"><a href="#"></a></div>
+             </div>
+             <span class="ad-section-bottom"></span>
+             <br style="clear:both;font-size:0;line-height:0;height:0;" />  <!--auto height fix--> 
+         </div> <!--End Ad Section-->
+       
+		 
+                    
+	</div>
+    <!-- End Grid 12 -->
+    
+    
+    
+</div><!-- end .container_16 -->
+
+<div class="footer-wrap">
+	<div class="footer">
+    	<i>Copy Right Reserved</i>
+        <div class="social-btns">
+        	<a href="#"><span id="facebook" title="Follow us on Facebook" class="facebook"></span></a>
+            <a href="#"><span id="linkedin" title="Follow us on LinkedIn" class="linkedin"></span></a>
+            <a href="#"><span id="twitter" title="Follow us on Twitter" class="twitter"></span></a>
+        </div>
+        <br style="clear:both;font-size:0;line-height:0;height:0;" />  <!--auto height fix--> 
+    </div>
+</div>
+
+</body>
+</html>
